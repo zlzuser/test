@@ -1,0 +1,18 @@
+server:
+  port: 6374
+  context-path: /api
+
+spring:
+  # DataSource 数据源
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.13.11.15:3306/clou_cj_yun?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: clou_cj_rds1
+    password: ENC(2ANjCgNoXQIXWgc/Qxc4ddTbLSjNDQpz)
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        usemicroServerPrepStmts: true
